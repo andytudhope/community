@@ -1,51 +1,45 @@
 # Community Development at Maker
 
-The Community Development group's mandate is to directly foster the growth of the MakerDAO ecosystem by incentivizing our most motivated members. We do this through a series of initiatives that encourage people to participate in, and contribute to, the success of the Dai Stablecoin platform.
+A new Community Development site for MakerDAO because Gitbook sucks.
 
-## Our Initiatives
+## Advantages
 
-### [Community Meetup Grants](meetups/README.md)
+Well, no more gitbook - can't say that one enough. This also maintains the link structure of the current site, which is a plus. Moreover, it is far easier to work with, much more customisable, and allows us to include material components in `.md` files, which is amazingly cool and helpful. Also, you can overwrrite whatever page you like with your own template, which makes for better readability and more attractiveness for all the community flies out there wanting to learn about Maker and how to get involved.
 
-Community members play an invaluable role in building a stronger MakerDAO ecosystem. The Community Development Group provides the resources needed to increase Dai adoption and help MakerDAO bring stability and financial inclusion to the world. To accomplish these goals, we created a 'Do It Yourself' Meetup guide and microgranting program dedicated to helping anyone create and organize a local community meetup.
+## Work Done So Far
 
-### [Community Translations](translations/README.md)
+1. Ditch gitbook for mkdocs material and migrate all content across.
+2. Minor edits to landing page, just for show and tell.
+3. Entire Page Tree structure (phew!)
+4. Renamed all README files to index files for sanity and ease.
+5. Begin edits on old/broken/changed links.
 
-We bring MakerDAO educational content to people around the world in their native languages by incentivizing our community translators with Dai bounties.
+### Edits Completed
 
-### [Development Grants Program](grants/README.md)
+This refers to using the output of `python -m mkdocs serve` or `build` to fix any broken links and generally update things I notice that are no longer present/relevant.
 
-The MakerDAO Community grants program provides funding for projects that increase Dai adoption, support emerging economies, open new markets, provide novel uses for the stablecoin, or otherwise further the principles of the MakerDAO Foundation.
+1. Contributing - noticed that there is no longer a Tools Guide (confused?) and General Contributors Guide (seems to be in the index now)
+2. Translations
+3. GnR Risk Meetings transcripts (phew!).
+4. Hackathons
+5. Meetups
+6. Onbaording
+7. FAQs
+8. SCD FAQs
+9. Grants
+10. Risk
 
-### [Hackathons](hackathons/README.md)
+## To Be Done Notes
 
-MakerDAO participates in a number of Hackathons every year. This section contains some information about how to request our participation in an upcoming event.
+1. All Governance summaries and transcripts from 36-59 are not in the Page Tree. Is there a reason for this? 
+2. All Governance Polls and Executive Votes - need to build proper index pages for both, probably rename files with a sane naming and dating convention.
+3. Add these to the Page Tree.
+4. Hackathon Winners page is empty. This makes me sad.
+5. Risk disclaimer not currently in Page Tree. Have not updated because maybe there are legal reasons for that.
+6. Favicon, logo and general styling ofc.
 
-### [Contributing](contributing/README.md)
+## Run It Yourself
 
-If you have any suggestions about how you think these initiatives should work, could be improved, or if you are interested in helping out, please join our [#community-development](https://chat.makerdao.com/channel/community-development) channel and introduce yourself.
-
-## Our Resources
-
-### [Awesome-MakerDAO](https://github.com/makerdao/awesome-makerdao/)
-
-Awesome-MakerDAO is a community-curated list of MakerDAO-related resources and content to which anyone can contribute. It contains official documentation, beginner guides, in-depth analysis, links to 3rd party tools, partnership announcements, AMAs, podcasts, and much more.
-
-### [MakerDAO MCD FAQs](faqs/README.md)
-
-This section provides answers to commonly asked questions about everything MakerDAO.
-
-We welcome you to help improve the MakerDAO FAQs by submitting Pull Requests or reaching out to us with feedback.
-
-### [MakerDAO SCD FAQs](scd-faqs/README.md)
-
-This section provides answers to commonly asked questions about everything MakerDAO, specifically as it related to the Single-Collateral Dai version of the system.
-
-We welcome you to help improve the MakerDAO FAQs by submitting Pull Requests or reaching out to us with feedback.
-
-### [Governance](governance/README.md)
-
-To ensure good governance and accountability, we've set up this section to contain helpful resources such as transcripts of the meetings, historical summaries, and more.
-
-### [Onboarding Guides](onboarding/README.md)
-
-These are community-built guides to help onboard different types of users into our ecosystem. Whether you're a potential MKR voter, a Vault owner, or Dai user, this section should have something for you. If it doesn't, reach out to us in our [chat](https://chat.makerdao.com/channel/community-development) or [forums](https://forum.makerdao.com/). This section has a handful of guides _coming soon™️._
+1. Get [mkdocs](https://www.mkdocs.org/#installation)
+2. Clone this repo.
+3. Run `mkdocs serve` or `mkdocs build`. Depending on your OS/distro, you may need to `python -m mkdocs serve`. Sorry about the old version of python y'all ;)

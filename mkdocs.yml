@@ -1,0 +1,279 @@
+# Project information
+site_name: Community Development
+site_url: https://community-development.makerdao.com/
+site_author: Andy Tudhope
+site_description: Open source understanding and participation
+
+# Repository
+repo_name: maker/community
+repo_url: https://github.com/maker/community
+edit_uri: ""
+
+# Configuration
+theme:
+  name: null
+  custom_dir: material
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features:
+    - tabs
+    #- instant
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: assets/favicon.png
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/maker/community
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/MakerDAO
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  # - pymdownx.highlight:
+  #     linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: andytudhope
+      repo: africa
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.extra
+
+# Page tree
+nav:
+  - Home: index.md
+  - Community Development at Maker: getting-started.md
+  - Onboarding: 
+    - Oboarding: 'onboarding/index.md'
+    - Vault Onboarding Guide: 'onboarding/vault-onboarding.md'
+    - Voter Onboarding Guide: 'onboarding/voter-onboarding.md'
+  - Meetups: 
+    - Meetup Grants and Guides: 'meetups/index.md'
+    - Getting Started Guide: 'meetups/getting-started-guide.md'
+    - Event Formats Guide: 'meetups/event-formats-guide.md'
+    - Promotion Guide: 'meetups/promotion-guide.md'
+    - Budget Guide: 'meetups/budget-guide.md'
+    - Requesting Funds: 'meetups/requesting-funds.md'
+    - FAQ: 'meetups/faq.md'
+    - Español: 'meetups/meetup-diy-kit-es.md'
+  - Translations: 
+    - Community Translations: 'translations/index.md'
+    - Translators Quick Start Guide: 'translations/translators-quick-start-guide.md'
+    - Editors Quick Start Guide: 'translations/editor-quick-start-guide.md'
+    - FAQ: 'translations/faq.md'
+  - Governance: 
+    - Governance: 'governance/index.md'
+    - Core Foundation Principles: 'governance/core-principles.md'
+    - Governance Risk Framework: 
+      - Part One: 'governance/governance-risk-framework/part-one.md'
+      - Part Two: 'governance/governance-risk-framework/part-two.md'
+      - Part Three: 'governance/governance-risk-framework/part-three.md'
+    - Governance and Risk Meetings: 
+      - Overview: 'governance/governance-and-risk-meetings/index.md'
+      - Summaries: 
+        - 'Index': 'governance/governance-and-risk-meetings/summaries/index.md'
+        - 'Episode 84 - Apr 02, 2020': 'governance/governance-and-risk-meetings/summaries/episode-84.md'
+        - 'Episode 83 - Mar 26, 2020': 'governance/governance-and-risk-meetings/summaries/episode-83.md'
+        - 'Episode 82 - Mar 24, 2020': 'governance/governance-and-risk-meetings/summaries/episode-82.md'
+        - 'Episode 81 - Mar 20, 2020': 'governance/governance-and-risk-meetings/summaries/episode-81.md'
+        - 'Episode 80 - Mar 19, 2020': 'governance/governance-and-risk-meetings/summaries/episode-80.md'
+        - 'Episode 79 - Mar 18, 2020': 'governance/governance-and-risk-meetings/summaries/episode-79.md'
+        - 'Episode 78 - Mar 17, 2020': 'governance/governance-and-risk-meetings/summaries/episode-78.md'
+        - 'Episode 77 - Mar 12, 2020': 'governance/governance-and-risk-meetings/summaries/episode-77.md'
+        - 'Episode 76 - Mar 05, 2020': 'governance/governance-and-risk-meetings/summaries/episode-76.md'
+        - 'Episode 75 - Feb 27, 2020': 'governance/governance-and-risk-meetings/summaries/episode-75.md'
+        - 'Episode 74 - Feb 20, 2020': 'governance/governance-and-risk-meetings/summaries/episode-74.md'
+        - 'Episode 73 - Feb 13, 2020': 'governance/governance-and-risk-meetings/summaries/episode-73.md'
+        - 'Episode 72 - Feb 06, 2020': 'governance/governance-and-risk-meetings/summaries/episode-72.md'
+        - 'Episode 71 - Jan 30, 2020': 'governance/governance-and-risk-meetings/summaries/episode-71.md'
+        - 'Episode 70 - Jan 23, 2020': 'governance/governance-and-risk-meetings/summaries/episode-70.md'
+        - 'Episode 69 - Jan 16, 2020': 'governance/governance-and-risk-meetings/summaries/episode-69.md'
+        - 'Episode 68 - Jan 09, 2020': 'governance/governance-and-risk-meetings/summaries/episode-68.md'
+        - 'Episode 67 - Jan 02, 2020': 'governance/governance-and-risk-meetings/summaries/episode-67.md'
+        - 'Episode 66 - Dec 19, 2019': 'governance/governance-and-risk-meetings/summaries/episode-66.md'
+        - 'Episode 65 - Dec 12, 2019': 'governance/governance-and-risk-meetings/summaries/episode-65.md'
+        - 'Episode 64 - Dec 05, 2019': 'governance/governance-and-risk-meetings/summaries/episode-64.md'
+        - 'Episode 63 - Nov 28, 2019': 'governance/governance-and-risk-meetings/summaries/episode-63.md'
+        - 'Episode 62 - Nov 21, 2019': 'governance/governance-and-risk-meetings/summaries/episode-62.md'
+        - 'Episode 61 - Nov 14, 2019': 'governance/governance-and-risk-meetings/summaries/episode-61.md'
+        - 'Episode 60 - Nov 07, 2019': 'governance/governance-and-risk-meetings/summaries/episode-60.md'
+      - Transcripts: 'governance/governance-and-risk-meetings/transcripts/index.md'
+    - Governance Polls: 'governance/polls/index.md'
+    - Executive Votes: 'governance/votes/index.md'
+    - Frequent Discussion Topics: 'governance/common-topics.md'
+    - Auditing Executive Spells: 'governance/executive-audit.md'
+    - FAQ: 'faqs/governance.md'
+  - Development Grants: 
+    - Overview: 'grants/index.md'
+    - Grantee Playbook: 'grants/grantee-playbook.md'
+  - Hackathons & Bounties: 
+    - Guide: 'hackathons/index.md'
+    - Developer Quickstart Guide: 'hackathons/developer-quick-start-guide.md'
+    - Organizer Quickstart Guide: 'hackathons/organizer-quick-start-guide.md'
+    - Funding Requirements: 'hackathons/requirements.md'
+    - FAQ: 'hackathons/faq.md'
+  - MCD FAQs:
+    - English: 
+      - 'Overview': 'faqs/index.md'
+      - 'Dai': 'faqs/dai.md'
+      - 'DSR': 'faqs/dsr.md'
+      - 'Emergency Shutdown': 'faqs/emergency-shutdown.md'
+      - 'Glossary of Terms': 'faqs/glossary.md'
+      - 'Governance': 'faqs/governance.md'
+      - 'Liquidation': 'faqs/liquidation.md'
+      - 'MKR Token': 'faqs/mkr-token.md'
+      - 'Oracles': 'faqs/oracles.md'
+      - 'Stability Fee': 'faqs/stability-fee.md'
+      - 'Vaults': 'faqs/vault.md'
+  - SCD FAQs:
+    - English: 
+      - 'Overview': 'scd-faqs/index.md'
+      - 'Collateral Debt Positions': 'scd-faqs/cdp.md'
+      - 'Dai': 'scd-faqs/dai.md'
+      - 'Emergency Shutdown': 'scd-faqs/emergency-shutdown.md'
+      - 'Glossary of Terms': 'scd-faqs/glossary.md'
+      - 'Governance': 'scd-faqs/governance.md'
+      - 'Keepers': 'scd-faqs/keepers.md'
+      - 'Liquidation': 'scd-faqs/liquidation.md'
+      - 'MakerDAO': 'scd-faqs/makerdao.md'
+      - 'Oracles': 'scd-faqs/oracles.md'
+      - 'Risk Management': 'scd-faqs/risk-management.md'
+      - 'Stability Fee': 'scd-faqs/stability-fee.md'
+    - Español: 
+      - 'Índice': 'scd-faqs/es/index.md'
+      - 'Posiciones de Deuda Colateralizadas (CDP)': 'scd-faqs/es/cdp.md'
+      - 'Dai Stablecoin': 'scd-faqs/es/dai.md'
+      - 'Apagado de Emergencia': 'scd-faqs/es/emergency-shutdown.md'
+      - 'Glosario de Términos': 'scd-faqs/es/glossary.md'
+      - 'Gobernanza': 'scd-faqs/es/governance.md'
+      - 'MakerDAO': 'scd-faqs/es/makerdao.md'
+      - 'Oráculos': 'scd-faqs/es/oracles.md'
+      - 'Gestión de Riesgos': 'scd-faqs/es/risk-management.md'
+      - 'Tarifa de Estabilidad': 'scd-faqs/es/stability-fee.md'
+      - 'Liquidación': 'scd-faqs/es/liquidation.md'
+    - Français: 
+      - 'Indice': 'scd-faqs/fr/index.md'
+      - 'Dai': 'scd-faqs/fr/dai.md'
+      - 'Frais de stabilité': 'scd-faqs/fr/stability-fee.md'
+      - 'Gouvernance': 'scd-faqs/fr/governance.md'
+      - 'Glossaire des termes': 'scd-faqs/fr/glossary.md'
+      - 'Liquidation': 'scd-faqs/fr/liquidation.md'
+      - 'Position de Dette Collatéralisée (CDP)': 'scd-faqs/fr/cdp.md'
+    - Italiano: 
+      - 'Indice': 'scd-faqs/it/index.md'
+      - 'Dai': 'scd-faqs/it/dai.md'
+      - 'I CDP': 'scd-faqs/it/cdp.md'
+      - 'Il tasso di interesse': 'scd-faqs/it/stability-fee.md'
+      - 'L’amministrazione': 'scd-faqs/it/governance.md'
+      - 'Le liquidazioni': 'scd-faqs/it/liquidation.md'
+    - 日本語: 
+      - '索引': 'scd-faqs/ja/index.md'
+      - '担保付き債務ポジション (CDP)': 'scd-faqs/ja/cdp.md'
+      - 'ステーブルコイン DAI': 'scd-faqs/ja/dai.md'
+      - '緊急シャットダウン': 'scd-faqs/ja/emergency-shutdown.md'
+      - '用語集': 'scd-faqs/ja/glossary.md'
+      - 'ガバナンス': 'scd-faqs/ja/governance.md'
+      - '清算': 'scd-faqs/ja/liquidation.md'
+      - 'MakerDAO': 'scd-faqs/ja/makerdao.md'
+      - 'オラクル': 'scd-faqs/ja/oracles.md'
+      - 'リスクマネジメントについての': 'scd-faqs/ja/risk-management.md'
+      - '安定化手数料': 'scd-faqs/ja/stability-fee.md'
+    - 한국어: 
+      - '인덱스': 'scd-faqs/ko/index.md'
+      - '부채 담보부 포지션': 'scd-faqs/ko/cdp.md'
+      - '비상정지': 'scd-faqs/ko/emergency-shutdown.md'
+      - '스테이블코인 다이 Dai': 'scd-faqs/ko/dai.md'
+      - '용어 해설집': 'scd-faqs/ko/glossary.md'
+      - '거버넌스': 'scd-faqs/ko/governance.md'
+      - '청산': 'scd-faqs/ko/liquidation.md'
+      - 'MakerDAO': 'scd-faqs/ko/makerdao.md'
+      - '오라클': 'scd-faqs/ko/oracles.md'
+      - '리스크 관리': 'scd-faqs/ko/risk-management.md'
+      - '안정화 수수료': 'scd-faqs/ko/stability-fee.md'
+    - Polski: 
+      - 'Indeks': 'scd-faqs/pl/index.md'
+      - 'Stabilna waluta dai': 'scd-faqs/pl/dai.md'
+      - 'Pozycje Długu z Zabezpieczeniem (CDP)': 'scd-faqs/pl/cdp.md'
+      - 'Opłata stabilizacyjna': 'scd-faqs/pl/stability-fee.md'
+      - 'Likwidacje': 'scd-faqs/pl/liquidation.md'
+      - 'Zarządzanie': 'scd-faqs/pl/governance.md'
+    - Tiếng Việt: 
+      - 'Vị trí Nợ Thế chấp': 'scd-faqs/vi/cdp.md'
+      - 'Thuật ngữ': 'scd-faqs/vi/glossary.md'
+      - 'Phí Ổn định': 'scd-faqs/vi/stability-fee.md'
+    - 中文: 
+      - '指数': 'scd-faqs/zh/index.md'
+      - '抵押债仓 (CDP)': 'scd-faqs/zh/cdp.md'
+      - '稳定币 Dai': 'scd-faqs/zh/dai.md'
+      - '紧急关停': 'scd-faqs/zh/emergency-shutdown.md'
+      - '术语表': 'scd-faqs/zh/glossary.md'
+      - '治理': 'scd-faqs/zh/governance.md'
+      - '清算': 'scd-faqs/zh/liquidation.md'
+      - 'MakerDAO': 'scd-faqs/zh/makerdao.md'
+      - '预言机': 'scd-faqs/zh/oracles.md'
+      - '风险管理': 'scd-faqs/zh/risk-management.md'
+      - '稳定费用': 'scd-faqs/zh/stability-fee.md'
+  - Risk: 
+    - Introduction: 'risk/index.md'
+    - Collateral Onboarding Guide: 'risk/collateral-onboarding-guide.md'
+    - Collateral Onboarding Guide - Español: 'risk/collateral-onboarding-guide-es.md'
+  - Contributing: 
+    - Get Started: 'contributing/index.md'
+    - CDIP Explainer: 'contributing/cdip-explainer.md'
+    - Writing Style Guide: 'contributing/writing-style-guide.md'
+    - Visual Style Guide: 'contributing/visual-style-guide.md'
+    - Reviewer Guide: 'contributing/reviewer-guide.md'
+    - Governance Call Summary Guide: 'contributing/gnr-summary-guide.md'
+    - Governance Call Summary Template: 'contributing/gnr-summary-template.md'
+    - FAQ: 'contributing/faq.md'
+
