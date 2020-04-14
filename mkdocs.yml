@@ -1,12 +1,12 @@
 # Project information
 site_name: Community Development
-site_url: https://community-development.makerdao.com/
+site_url: https://andytudhope.github.io/community
 site_author: Andy Tudhope
 site_description: Open source understanding and participation
 
 # Repository
-repo_name: maker/community
-repo_url: https://github.com/maker/community
+repo_name: makerdao/community
+repo_url: https://github.com/makerdao/community
 edit_uri: ""
 
 # Configuration

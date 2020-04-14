@@ -20,10 +20,10 @@ This refers to using the output of `python -m mkdocs serve` or `build` to fix an
 
 1. Contributing - noticed that there is no longer a Tools Guide (confused?) and General Contributors Guide (seems to be in the index now)
 2. Translations
-3. GnR Risk Meetings transcripts (phew!).
+3. GnR Risk Meetings transcripts (phew!)
 4. Hackathons
 5. Meetups
-6. Onbaording
+6. Onboarding
 7. FAQs
 8. SCD FAQs
 9. Grants
