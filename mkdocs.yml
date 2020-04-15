@@ -28,8 +28,8 @@ theme:
     - tabs
     #- instant
   palette:
-    primary: indigo
-    accent: indigo
+    primary: teal
+    accent: orange
   font:
     text: Roboto
     code: Roboto Mono
