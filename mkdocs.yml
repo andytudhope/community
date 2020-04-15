@@ -47,7 +47,7 @@ plugins:
 extra:
   social:
     - icon: fontawesome/brands/github
-      link: https://github.com/maker/community
+      link: https://github.com/makerdao/community
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/MakerDAO
 
@@ -77,8 +77,8 @@ markdown_extensions:
   - pymdownx.keys
   - pymdownx.magiclink:
       repo_url_shorthand: true
-      user: andytudhope
-      repo: africa
+      user: makerdao
+      repo: community
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
